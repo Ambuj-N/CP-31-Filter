@@ -1,0 +1,213 @@
+/* --- CP-31 Master: Native Structure + Modern Colors --- */
+
+/* 1. Panel Container */
+.cp31-panel {
+    margin-bottom: 1em;
+}
+
+/* 2. The Header */
+.cp31-header {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cp31-title-text {
+    color: #3b5998;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.cp31-badges {
+    display: flex;
+    gap: 5px;
+}
+
+.streak-badge {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #ffe0b2;
+    white-space: nowrap;
+    cursor: help;
+    display: none;
+}
+
+.daily-badge {
+    background-color: #e3f2fd; 
+    color: #1565c0;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #bbdefb;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.daily-badge.active {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-color: #c8e6c9;
+}
+
+.daily-badge.gold {
+    background-color: #fff8e1;
+    color: #f57f17;
+    border-color: #ffecb3;
+}
+
+/* 3. Inner Content */
+.cp31-inner {
+    padding: 8px;
+    font-family: verdana, arial, sans-serif;
+    font-size: 13px;
+}
+
+/* 4. Controls Styling */
+.cp31-row {
+    margin-bottom: 8px;
+}
+
+.cp31-select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #333;
+}
+
+.cp31-checkbox-label {
+    font-size: 12px !important;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* 5. Progress Bar */
+.cp31-progress-section {
+    margin-bottom: 10px;
+    padding: 6px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.cp31-info-text {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cp31-progress-container {
+    background: #e0e0e0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cp31-progress-fill {
+    height: 100%;
+    background-color: #00a900;
+    transition: width 0.4s ease;
+}
+
+/* 6. Tag Filter Chips */
+.cp31-chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.cp31-chip {
+    display: inline-flex;
+    align-items: center;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-size: 10px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cp31-chip:hover {
+    background: #e0e0e0;
+    border-color: #999;
+}
+
+/* EXCLUDED CHIP STYLE (RED) */
+.cp31-chip.excluded {
+    background: #ffebee;
+    border-color: #ef9a9a;
+    color: #c62828;
+    text-decoration: line-through;
+}
+
+.cp31-chip.excluded:hover {
+    background: #ffcdd2;
+    border-color: #e57373;
+}
+
+.cp31-chip-close {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #888;
+    font-size: 11px;
+}
+
+.cp31-chip:hover .cp31-chip-close {
+    color: #cc0000;
+}
+
+/* 7. Buttons */
+.cp31-btn {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #b9b9b9;
+    border-radius: 3px;
+    background: #f5f5f5; 
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.cp31-btn:hover {
+    background: #e6e6e6;
+    border-color: #a0a0a0;
+}
+
+.cp31-btn-random {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+/* 8. Tags in Table */
+.cp31-tag-area {
+    font-size: 11px;
+    color: #777;
+    margin-top: 3px;
+}
+.cp31-hidden-tags .cp31-tag-area {
+    display: none !important;
+}
