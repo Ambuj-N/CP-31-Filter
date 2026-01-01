@@ -3,6 +3,18 @@
   "name": "Codeforces CP-31 Master",
   "version": "2.0",
   "description": "Instantly loads CP-31 problems from API without pagination.",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
   "permissions": ["activeTab"],
   "host_permissions": ["https://codeforces.com/api/*"],
   "content_scripts": [
